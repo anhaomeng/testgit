@@ -1,0 +1,171 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	font-size: 10px;
+	background: rgb(239,239,244);
+	color: #333333;
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: url(../img/loginbg.jpg) no-repeat top;
+	background-size: 100%;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 2rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 15%;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  line-height: 6rem;
+}
+/* 背景图大盒子 */
+.bg{
+	width: 100%;
+	height: 100%;
+}
+.txt1{
+	font-size: 3.2rem;
+	color: white;
+	font-weight: 600;
+	height: 14rem;
+	line-height: 14rem;
+	text-align: center;
+}
+/* 填写信息 */
+.username{
+	display: flex;
+	width:88%;
+	height: 6rem;
+	margin: 0 auto;
+}
+#username{
+	width: 85%;
+	background-color: #333333;
+	opacity: 0.6;
+	border: none;
+	font-size: 1.8rem;
+	outline: none;
+	padding-left: 2rem;
+	color: white;
+}
+.psd{
+	display: flex;
+	width:88%;
+	height: 6rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+#psd{
+	width: 85%;
+	background-color: #333333;
+	opacity: 0.6;
+	border: none;
+	font-size: 1.8rem;
+	outline: none;
+	padding-left: 2rem;
+	color: white;
+}
+.check{
+	display: flex;
+	width:88%;
+	height: 6rem;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+#check{
+	width: 65%;
+	background-color: #333333;
+	opacity: 0.6;
+	border: none;
+	font-size: 1.8rem;
+	outline: none;
+	padding-left: 2rem;
+	color: white;
+}
+.check span{
+	width: 20%;
+	color: #333333;
+	background: #AEA65F;
+	text-align: center;
+	font-size: 2.2rem;
+	height: 6rem;
+	line-height: 6rem;
+	border-radius: 0.5rem;
+}
+/* 记住密码勾选框 */
+.remember{
+	width: 88%;
+	margin: 2rem auto;
+	display: flex;
+}
+.remember span img{
+	width: 100%;
+	
+}
+.remember span{
+	width: 5%;
+	height: 2rem;
+	vertical-align: top;
+}
+#yes{
+	display: none;
+}
+.txt2{
+	color: white;
+	font-size: 1.4rem;
+	height: 2rem;
+	line-height: 2rem;
+	vertical-align: top;
+	padding-left: 0.5rem;
+	width: 75%;
+}
+.txt3{
+	color: white;
+	font-size: 1.4rem;
+	height: 2rem;
+	line-height: 2rem;
+	vertical-align: top;
+	padding-left: 0.5rem;
+	width: 20%;
+}
+#loginbtn{
+	width: 88%;
+	color: white;
+	font-size: 2.6rem;
+	text-align: center;
+	height: 6rem;
+	background:#25CB83 ;
+	margin: 0 auto;
+	line-height: 6rem;
+	border-radius: 0.5rem;
+}
+#zhuce{
+	width: 88%;
+	color: white;
+	font-size: 2.6rem;
+	text-align: center;
+	height: 6rem;
+	background:RGB(37,203,131,.5) ;
+	border: 1px solid #25CB83;
+	box-sizing: border-box;
+	margin: 0 auto;
+	line-height: 6rem;
+	border-radius: 0.5rem;
+	margin-top: 1.5rem;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/remstyle.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery-3.5.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/center.css"/>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="top">
+				<p class="txt1"><i class="iconfont">&#xe643;</i>返回</p>
+			</div>
+			<div class="user">
+				<div class="main">
+					<div class="pic">
+						<img src="../img/touxiang.png" >
+					</div>
+					<div class="user1">
+						<p id="username"></p>
+						<p id="phone"></p>
+						<p id="vip">普通会员</p>
+					</div>
+					<div class="qiandao">
+						签到
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="sbox">
+					<p class="txt2">
+						74.00
+					</p>
+					<p class="txt3">
+						现金余额
+					</p>
+				</div>
+				<div class="sbox">
+					<p class="txt2">
+						4789
+					</p>
+					<p class="txt3">
+						可用积分
+					</p>
+				</div>
+				<div class="sbox">
+					<p class="txt2">
+						104598
+					</p>
+					<p class="txt3">
+						待用积分
+					</p>
+				</div>
+				<div class="bbox border-r">
+					<p class="txt2">
+						31000
+					</p>
+					<p class="txt3">
+						商品兑换券
+					</p>
+				</div>
+				<div class="bbox">
+					<p class="txt2">
+						56179
+					</p>
+					<p class="txt3">
+						可倍增积分额值
+					</p>
+				</div>
+			</div>
+			<div class="list">
+				<div class="txt4">
+					<p>现金账户管理</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+				<div class="txt4">
+					<p>现金充值</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+				<div class="txt4">
+					<p>现金转账</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+			</div>
+			<div class="list">
+			<div class="txt4">
+				<p>商品兑换券</p>
+				<i class="iconfont1">&#xe61c;</i>
+			</div>
+			<div class="txt4">
+				<p>报单商品券</p>
+				<i class="iconfont1">&#xe61c;</i>
+			</div>
+		</div>
+			<div class="list">
+				<div class="txt4">
+					<p>申请联盟商家</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+				<div class="txt4">
+					<p>申请运营中心</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+				<div class="txt4">
+					<p>消费订单管理</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+				<div class="txt4">
+					<p>我的好友</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+				<div class="txt4">
+					<p>修改密码</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+				<div class="txt4">
+					<p>修改姓名</p>
+					<i class="iconfont1">&#xe61c;</i>
+				</div>
+			</div>
+			<div id="loginbtn">
+				退出登录
+			</div>
+			<div class="last">
+				<div>
+					<i class="iconfont1">&#xe72b;</i>
+					<p>商城</p>
+				</div>
+				<div>
+					<i class="iconfont1">&#xe646;</i>
+					<p>二维码</p>
+				</div>
+				<div>
+					<i class="iconfont1">&#xe606;</i>
+					<p>客服</p>
+				</div>
+				<div>
+					<i class="iconfont1">&#xe651;</i>
+					<p>我的</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var loginname=document.getElementById('username');
+		var phone=document.getElementById('phone');
+		var cookie=document.cookie;
+		var loginnameVal='';
+		var phoneVal='';
+		var cookieArr=cookie.split('; ');
+		for(var i=0 ; i<cookieArr.length ; i++){
+			var arr1 = cookieArr[i].split('=');
+			if(arr1[0]=='loginname'){
+				loginnameVal=decodeURI(arr1[1]);
+			};
+			if(arr1[0]=='phone'){
+				phoneVal=decodeURI(arr1[1]);
+			};
+		};
+		loginname.innerHTML = loginnameVal;
+		phone.innerHTML = phoneVal;
+		
+	</script>
+</html>
